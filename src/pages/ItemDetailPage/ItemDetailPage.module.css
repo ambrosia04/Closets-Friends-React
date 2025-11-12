@@ -1,0 +1,84 @@
+.pageContainer {
+    position: relative;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.homeLink, .editLink {
+    position: absolute;
+    top: 0px;
+    font-size: 2.5rem;
+    color: #312a2a;
+    transition: color 0.2s;
+}
+
+.homeLink {
+    position: inherit;
+}
+
+.editLink {
+    right: 3%;
+    top: 3%;
+}
+
+.homeLink:hover, .editLink:hover {
+    color: #007bff;
+}
+
+.detailContainer {
+    display: flex;
+    gap: 40px;
+    background: rgba(177, 108, 43, 0.2);
+    padding: 30px;
+    border-radius: 8px;
+    border: #311c0a 1px solid;
+    box-shadow: 0 10px 205px rgba(0,0,0,0.1);
+}
+
+.imageSection {
+    flex: 1;
+}
+
+.mainImage {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.thumbnailContainer {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.thumbnailContainer img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.thumbnailContainer img:hover {
+    border-color: #007bff;
+}
+
+.thumbnailContainer img.active {
+    border-color: #007bff;
+    opacity: 0.7;
+}
+
+.infoSection {
+    flex: 1;
+}
+
+.infoSection h1 {
+    margin-top: 0;
+}

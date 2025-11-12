@@ -1,0 +1,30 @@
+/* src/components/MultiSelectButtons/MultiSelectButtons.module.css */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.optionBtn {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.optionBtn:hover {
+    background-color: #e0e0e0;
+}
+
+.optionBtn.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}

@@ -1,0 +1,63 @@
+.wardrobeItem {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    background-image: url('../../assets/ItemBG.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.wardrobeItem:hover {
+    transform: scale(1.05);
+}
+
+.wardrobeItem img {
+    width: 80%;
+    height: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.wardrobeItem p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 8px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.wardrobeItem:hover p {
+    opacity: 1;
+}
+
+.deleteBtn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 26px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.wardrobeItem:hover .deleteBtn {
+    opacity: 1;
+}

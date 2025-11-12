@@ -1,0 +1,53 @@
+.mainHeader {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 80px;
+    padding: 0 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: auto;
+}
+
+.addBtn {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    background: #4eb053;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+}
+
+.addBtn:hover {
+    background: #275718;
+}
+
+.ioButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ioBtn {
+    background-color: #5a6268;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+}
