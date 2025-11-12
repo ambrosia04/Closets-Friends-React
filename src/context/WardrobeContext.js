@@ -9,7 +9,7 @@ export function useWardrobe() {
 
 export const WardrobeProvider = ({ children }) => {
     // Item state (as before)
-    const [items, setItems] = useLocalStorage('wardrobeItems', []);
+     const [items, setItems] = useLocalStorage('wardrobeItems', []);
 
     // State for our dynamic options
     const [materials, setMaterials] = useLocalStorage('wardrobeMaterials', []);
@@ -32,7 +32,7 @@ export const WardrobeProvider = ({ children }) => {
                 .catch(err => console.error("Failed to seed vibes:", err));
         }
         // The empty array [] means this effect runs only once when the app starts
-    }, []);
+    }, [materials, vibes, setMaterials, setVibes]);
 
     // Functions to add new options (case-insensitive check)
     const addMaterial = (newMaterial) => {
