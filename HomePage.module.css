@@ -1,0 +1,56 @@
+/* REVERTED: This is the simpler layout CSS you requested */
+.wardrobeContainer {
+    margin: 0;
+    padding-left: 10%; /* adjust this or remove completely */
+    max-width: 1200px;
+}
+
+
+.wardrobeGrid {
+    display: grid;
+    justify-content: start; /* pushes items to the left */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+/* These styles are still needed and work perfectly with the new layout */
+.emptyWardrobe {
+    padding-left: 105%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh; /* you can adjust this to control vertical position */
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.emptyImage {
+    max-width: 400px;
+    opacity: 0.7;
+}
+
+.addBtnEmpty {
+    display: block;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color: #f5f5f5;
+    text-align: center;
+    background: #4eb053;
+    box-shadow: 0 0 3px gray;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.modalActions {
+    margin-top: 20px;
+}
